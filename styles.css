@@ -1,0 +1,174 @@
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#privacy-notes {
+    background-color: lightcoral;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#heading {}
+
+main form {
+    margin: auto;
+    position: relative;
+}
+
+label {
+    margin: 100px;
+}
+
+button {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 8rem;
+    height: 2rem;
+    border-style: dotted;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    right: 20px;
+    bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+#date {
+    display: block;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 2rem;
+    border: 3px solid black;
+    align-self: stretch;
+}
+
+#luckyNumber {
+    display: block;
+    padding-left: 5rem;
+    padding-right: 3.5rem;
+    height: 2rem;
+    border: 3px solid black;
+}
+
+#result img {
+    display: block;
+    width: 20%;
+    position: absolute;
+    top: 330px;
+    right: 340px;
+}
+
+#result {
+    postition: relative;
+}
+
+@media only screen and (max-width: 1800px) {
+    #result {
+        postition: relative;
+    }
+    #result img {
+        display: block;
+        width: 20%;
+        position: absolute;
+        top: 340px;
+        right: 380px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    #result {
+        postition: relative;
+    }
+    #result img {
+        display: block;
+        width: 20%;
+        position: absolute;
+        top: 420px;
+        right: 440px;
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    #result {
+        postition: relative;
+    }
+    #result img {
+        display: block;
+        width: 20%;
+        position: absolute;
+        top: 420px;
+        right: 220px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #result {
+        postition: relative;
+    }
+    #result img {
+        display: block;
+        width: 20%;
+        position: absolute;
+        top: 450px;
+        right: 340px;
+    }
+}
+
+footer {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #result {
+        postition: relative;
+    }
+    #result img {
+        display: block;
+        width: 30%;
+        position: absolute;
+        top: 450px;
+        right: 300px;
+    }
+}
+
+@media only screen and (max-width: 423px) {
+    #result {
+        postition: relative;
+    }
+    #result img {
+        display: block;
+        width: 30%;
+        position: absolute;
+        top: 450px;
+        right: 160px;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    #result {
+        postition: relative;
+    }
+    #result img {
+        display: block;
+        width: 30%;
+        position: absolute;
+        top: 540px;
+        right: 160px;
+    }
+}
+
+footer {}
