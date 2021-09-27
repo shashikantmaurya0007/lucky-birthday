@@ -87,6 +87,11 @@ button {
         top: 340px;
         right: 380px;
     }
+    #result h1 {
+        position: absolute;
+        top: 520px;
+        left: 60px;
+    }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -130,6 +135,8 @@ button {
 
 footer {
     display: flex;
+    width: inherit;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 600px) {
@@ -170,5 +177,3 @@ footer {
         right: 160px;
     }
 }
-
-footer {}
