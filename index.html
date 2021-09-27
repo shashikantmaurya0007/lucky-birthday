@@ -2,23 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
     <div class="container">
-
         <div id="privacy-notes">
-
             Privacy Notes! We are not storing any data &nbsp;&nbsp;&nbsp;&nbsp;<i id="privacyNotesIcon" onclick="removePrivacyNotes()" class="fa fa-close"></i>
         </div>
         <div id="heading">
-            <h1> Enter your birth-date and lucky number to test your result</h1>
+            <h1>Enter your birth-date and lucky number to test your result</h1>
         </div>
 
         <main>
@@ -28,36 +26,28 @@
                 <label for="date">Enter lucky Number</label>
                 <input id="luckyNumber" type="number" placeholder="Enter your lucky number " required />
 
-
-                <button type="submit" onclick="validate(event)">check &nbsp;<i class="fa fa-envelope-open" style="font-size:24px"></i></button>
-
+                <button type="submit" onclick="validate(event)">
+            check &nbsp;<i
+              class="fa fa-envelope-open"
+              style="font-size: 24px"
+            ></i>
+          </button>
             </form>
         </main>
         <div id="result">
-            <img src="./tenor.gif" alt="">
-
+            <img src="./tenor.gif" alt="" />
         </div>
         <div id="happy">
-            <img src="./happy.gif" alt="">
-
+            <img src="./happy.gif" alt="" />
         </div>
 
-
-
-
         <footer>
-
-            <a href="https://github.com/shashikantmaurya0007?tab=overview&from=2021-06-01&to=2021-06-30"> <i class="fa fa-github" style="font-size:36px"></i></a>
-            <a href="#"><i class="fa fa-instagram" style="font-size:36px"></i></a>
-            <a href="#"><i class="fa fa-telegram" style="font-size:36px"></i></a>
-
+            <a href="https://github.com/shashikantmaurya0007?tab=overview&from=2021-06-01&to=2021-06-30">
+                <i class="fa fa-github" style="font-size: 36px"></i
+        ></a>
+        <a href="#"><i class="fa fa-instagram" style="font-size: 36px"></i></a>
+            <a href="#"><i class="fa fa-telegram" style="font-size: 36px"></i></a>
         </footer>
-
-        
-
-
-
-
     </div>
     <script src="./index.js"></script>
 </body>
