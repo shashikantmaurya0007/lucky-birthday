@@ -6,7 +6,7 @@ function removePrivacyNotes() {
 
 //calculating the sum of date value
 function returnTheSum(date) {
-    console.log(date);
+    // console.log(date);
 
     const dmy = date.split("-");
 
@@ -29,13 +29,35 @@ function checkLucky(sum, luckyNumber) {
 function validate(event) {
     event.preventDefault();
     let date_value = document.getElementById("date").value;
+    if (date_value == "" || date_value == undefined) {
+        alert("enter the birthdate");
+        return;
+    }
+
     let luckyNumber_value = parseInt(
         document.getElementById("luckyNumber").value
     );
+
+    if (
+        luckyNumber_value == undefined ||
+        document.getElementById("luckyNumber").value == ""
+    ) {
+        alert("enter the lucky number");
+        return;
+    }
+    if (Number(document.getElementById("luckyNumber").value) < 0) {
+        alert("please enter the positive lucky number");
+        return;
+    }
+    if (luckyNumber_value < 0) {
+        alert("enter the positive lucky number");
+        return;
+    }
+
     let sum = returnTheSum(date_value);
 
     if (!checkLucky(sum, luckyNumber_value)) {
-        console.log("true");
+        // console.log("true");
         document.getElementById("result").style.visibility = "visible";
         document.getElementById("result").style.display = "block";
         document.getElementById("happy").style.visibility = "hidden";
